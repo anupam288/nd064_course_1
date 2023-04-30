@@ -25,7 +25,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-	  file: ./project/Dockerfile
-          platforms: linux/amd64
           push: true
           tags: dockeranupam288/techtrends:latest
