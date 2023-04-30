@@ -2,11 +2,11 @@ FROM python:3.8
 
 LABEL maintainer="Anupam Bansal"
 
-COPY . /app
+COPY ./techtrends /app
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+RUN pip install -r techtrends/requirements.txt
 
 EXPOSE 3111
 
