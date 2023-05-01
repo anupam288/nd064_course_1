@@ -4,4 +4,4 @@ apiVersion: apps/v1
 kind: Namespace
 
 metadata:
-  name: {{.Values.namespace.name}}
+  name: {{ .Values.namespace.name }}

@@ -7,16 +7,16 @@ metadata:
   labels:
     app: techtrends
   name: techtrends
-  namespace: {{.Values.namespace.name}}
+  namespace: {{ .Values.namespace.name }}
 ## Define the desired configuration for the Service resource.
 spec:
   ## Define the ports that the service should serve on. 
   ## For example, the service is exposed on port 8111, and
   ## directs the traffic to the pods on port 6112, using TCP.
   ports:
-  - port: {{.Values.service.port}}
-    protocol: {{.Values.service.protocol}}
-    targetPort: {{.Values.service.targetPort}}
+  - port: {{ .Values.service.port }}
+    protocol: {{ .Values.service.protocol }}
+    targetPort: {{ .Values.service.targetPort }}
   ## Identify the pods managed by this Service using the following selectors.
   ## In this case, all pods with the label `go-helloworld`.
   selector:
