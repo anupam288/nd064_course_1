@@ -24,7 +24,7 @@ spec:
         tag: latest
     spec:
       containers:
-      - image: anupam288/{{ .Values.image.repository }}:{{ .Values.image.tag }}
+      - image: dockeranupam288/{{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
         ports:
